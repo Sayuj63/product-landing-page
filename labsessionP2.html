@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FitWear - Premium Gym Apparel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlyKoRj0Kf7Zj7AvdzwSi-s-LVGeoIEWkt9w&s" alt="FitWear Logo" />
+      <h1>FitWear</h1>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#cta">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <h1>Elevate Your Workout</h1>
+      <button class="cta-button" onclick="window.location.href='https://zx4h0x-th.myshopify.com/collections/new'">Shop Now</button>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features" id="features">
+    <div class="feature-card">
+      <h3>Breathable Fabric</h3>
+      <p>Stay cool during intense workouts.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Flexible Fit</h3>
+      <p>Engineered to move with you.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Sweat-Wicking</h3>
+      <p>Moisture control technology.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Durable Design</h3>
+      <p>Built to withstand your toughest sessions.</p>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials" id="testimonials">
+    <div class="testimonial-card">
+      <p>"The best gym wear I’ve ever owned!"</p>
+      <h4>- Alex D.</h4>
+    </div>
+    <div class="testimonial-card">
+      <p>"Stylish, comfortable, and built for performance."</p>
+      <h4>- Jamie K.</h4>
+    </div>
+    <div class="testimonial-card">
+      <p>"I feel more confident at the gym thanks to FitWear."</p>
+      <h4>- Sam R.</h4>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="cta-section" id="cta">
+    <h2>Ready to upgrade your fitness style?</h2>
+    <button class="cta-button" onclick="window.location.href='https://zx4h0x-th.myshopify.com/collections/new'">Buy Now</button>
+  </section>
+</body>
+<!-- Sign Up Section -->
+<section class="signup-section">
+    <h2>Join the FitWear Movement</h2>
+    <p>Get exclusive offers and updates.</p>
+    <button class="cta-button" onclick="window.location.href='https://zx4h0x-th.myshopify.com/collections/new'">Sign Up</button>
+  </section>
+  
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: 'Arial', sans-serif;
+        background-color: #000;
+        color: #fff;
+        line-height: 1.6;
+      }
+      
+      /* Navigation */
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 5%;
+        background-color: rgba(0, 0, 0, 0.95);
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+      }
+      
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      
+      .logo img {
+        height: 40px;
+        width: auto;
+      }
+      
+      .nav-links {
+        display: flex;
+        list-style: none;
+        gap: 2rem;
+      }
+      
+      .nav-links a {
+        color: #fff;
+        text-decoration: none;
+        position: relative;
+      }
+      
+      .nav-links a::after {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: white;
+        transition: width 0.3s ease;
+      }
+      
+      .nav-links a:hover::after {
+        width: 100%;
+      }
+      
+      /* Hero */
+      .hero {
+        height: 100vh;
+        background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+          url('https://framerusercontent.com/images/Go8FgbJq5k83GEHQpJxfiOfyU.jpg');
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0 2rem;
+        margin-top: 60px;
+      }
+      
+      .hero-content {
+        animation: fadeInUp 1s ease forwards;
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      
+      @keyframes fadeInUp {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      
+      .hero h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+      }
+      
+      .cta-button {
+        padding: 1rem 2rem;
+        font-size: 1rem;
+        background-color: white;
+        color: black;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        position: relative;
+        transition: all 0.3s ease;
+      }
+      
+      .cta-button:hover {
+        transform: scale(1.05);
+        background-color: #fff;
+        box-shadow: 0 0 15px rgba(255,255,255,0.2);
+      }
+      
+      /* Features */
+      .features {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+        padding: 5rem 5%;
+        background-color: #111;
+      }
+      
+      .feature-card {
+        background: #1a1a1a;
+        padding: 2rem;
+        border-radius: 10px;
+        text-align: center;
+        width: 250px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      
+      .feature-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(255,255,255,0.2);
+      }
+      
+      /* Testimonials */
+      .testimonials {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+        padding: 5rem 5%;
+        background-color: #0d0d0d;
+      }
+      
+      .testimonial-card {
+        background: #1a1a1a;
+        padding: 2rem;
+        border-radius: 10px;
+        width: 280px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        text-align: center;
+      }
+      
+      .testimonial-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(255,255,255,0.2);
+      }
+      
+      /* CTA Section */
+      .cta-section {
+        background-color: #000;
+        padding: 5rem 2rem;
+        text-align: center;
+      }
+      
+      .cta-section h2 {
+        margin-bottom: 2rem;
+        font-size: 2rem;
+      }
+      .signup-section {
+        background-color: #111;
+        padding: 4rem 2rem;
+        text-align: center;
+        border-top: 1px solid #333;
+      }
+      
+      .signup-section h2 {
+        margin-bottom: 1rem;
+        font-size: 2rem;
+        color: #fff;
+      }
+      
+      .signup-section p {
+        margin-bottom: 2rem;
+        color: #ccc;
+      }
+      
+      .signup-section .cta-button {
+        background-color: white;
+        color: black;
+        border-radius: 4px;
+      }
+      
+      
+      /* Responsive */
+      @media (max-width: 768px) {
+        .features, .testimonials {
+          flex-direction: column;
+          align-items: center;
+        }
+      
+        .hero h1 {
+          font-size: 2.5rem;
+        }
+      }
+      
+      @media (max-width: 480px) {
+        .hero h1 {
+          font-size: 2rem;
+        }
+      
+        .cta-button {
+          padding: 0.8rem 1.5rem;
+        }
+      }
+      
+</style>
+</html>
